@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
 import os
 import json
 import argparse
@@ -228,7 +227,7 @@ def main():
         description="Semantic chunking of a single JSON list of text segments"
     )
     p.add_argument("input_file", help="Path to a JSON file containing a list of strings")
-    p.add_argument("-o", "--output_dir", default="./", help="Directory to save chunked JSON")
+    p.add_argument("-o", "--output_dir", default="./output", help="Directory to save chunked JSON")
     p.add_argument("-m", "--model", default="BAAI/bge-m3", help="SentenceTransformer model")
     p.add_argument("-d", "--device", default="cuda" if torch.cuda.is_available() else "cpu",
                    help="Device for model (cuda or cpu)")
