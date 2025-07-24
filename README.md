@@ -24,7 +24,7 @@ This script takes a JSON file containing a list of text strings and chunks them 
 
 1. Clone this repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/yigittuncer07/semantic_chunking
 cd semantic_chunking
 ```
 
